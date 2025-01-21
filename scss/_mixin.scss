@@ -1,0 +1,68 @@
+@mixin box($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-center-column {
+  @include flex-center;
+  flex-direction: column;
+}
+
+@mixin flex-center-vert {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-center-horiz {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin button($bg-color, $text-color, $padding, $border-radius) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: $padding;
+  border-radius: $border-radius;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+@mixin body-text {
+  line-height: 24px;
+  font-size: 18px;
+}
+
+@mixin text_title($fz: 32px) {
+  & {
+    font-size: $fz;
+    max-width: 1000px;
+    font-weight: 500;
+    line-height: 42px;
+    background: linear-gradient(
+      90deg,
+      #0740a3 0%,
+      #005dff 28%,
+      #2c6cdc 51%,
+      #0740a3 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @media screen and (max-width: 500px) {
+    & {
+      font-size: 28px;
+    }
+  }
+}
