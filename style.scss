@@ -10,6 +10,12 @@
   font-family: "Nunito Sans", sans-serif !important;
 }
 
+body {
+  overflow-x: hidden;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+}
+
 .hero-section,
 .hero_bg,
 .navbar,
@@ -23,14 +29,14 @@
 }
 
 .hero_bg {
-  @include box(100%, 80vh);
-  max-height: 800px;
+  @include box(100vw, 80vh);
   object-fit: cover;
   filter: brightness(0.65);
   z-index: 0;
 }
 
 .glide {
+  width: 100%;
   margin-top: -75px;
 }
 
@@ -87,7 +93,7 @@
 
 .wrapper {
   background: #f9f9f9;
-  z-index: 0;
+  z-index: -1;
 }
 
 .hero-subtitle {
@@ -130,14 +136,19 @@
   line-height: 32px;
 }
 
-.glide {
-  cursor: default;
+.glide__slide figure img {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
 }
 
-.glide__slides {
-  pointer-events: none !important;
-  cursor: default;
-}
+//.glide {
+//  cursor: default;
+//}
+//
+//.glide__slides {
+//  pointer-events: none !important;
+//  cursor: default;
+//}
 
 .slider-buttons {
   position: absolute;
@@ -371,4 +382,5 @@
   width: 94px;
 }
 
+@import "scss/about";
 @import "scss/media";

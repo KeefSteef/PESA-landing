@@ -6,17 +6,15 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css"
-    />
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css"
+      integrity="sha512-esCylxvZEDuZ+3L2JRa6wYVNDihaDw5fDBUPZ9X9igrCIMHILsPiR4A7+dKmqqzvvIH8lzRlRV4b4V7Q9es/ew=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
@@ -32,27 +30,21 @@
         </nav>
         <div class="glide">
           <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides" data-glide-el="track">
-              <li>
-                <img
-                  class="glide__slide hero_bg"
-                  src="./img/image%202.png"
-                  alt=""
-                />
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <figure>
+                  <img class="hero_bg" src="./img/image%202.png" alt="" />
+                </figure>
               </li>
-              <li>
-                <img
-                  class="glide__slide hero_bg"
-                  src="./img/train2.png"
-                  alt=""
-                />
+              <li class="glide__slide">
+                <figure>
+                  <img class="hero_bg" src="./img/train3.png" alt="" />
+                </figure>
               </li>
-              <li>
-                <img
-                  class="glide__slide hero_bg"
-                  src="./img/train3.png"
-                  alt=""
-                />
+              <li class="glide__slide">
+                <figure>
+                  <img class="hero_bg" src="./img/train2.png" alt="" />
+                </figure>
               </li>
             </ul>
           </div>
@@ -221,7 +213,12 @@
       </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"
+      integrity="sha512-BXASbMmKLu+RC5TDnkupyhvrjiOQXILh/5zgIS8k5JAC71a73lNweVEg/X+9XJQ7GK22PH9WpztY3zqrji+xrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <script type="module" src="./main.js"></script>
   </body>

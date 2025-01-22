@@ -2,6 +2,7 @@
   "dependencies": {
     "@glidejs/glide": "^3.7.1",
     "prettier": "^3.4.2",
-    "sass": "^1.83.4"
+    "sass": "^1.83.4",
+    "serve": "^14.2.4"
   }
 }

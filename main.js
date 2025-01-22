@@ -1,8 +1,8 @@
 new Glide(".glide", {
-  type: "carousel",
-  autoplay: 6000,
+  type: "slider",
+  animationDuration: 2000,
+  perView: 1,
   gap: 0,
-  animationDuration: 1500,
 }).mount();
 
 document.querySelector(".hero-button").addEventListener("click", () =>
