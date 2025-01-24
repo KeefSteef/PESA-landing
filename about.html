@@ -7,6 +7,11 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
@@ -45,7 +50,7 @@
       </section>
       <section class="about">
         <div class="about__item">
-          <img class="about__item-svg" src="img/right_lines.svg" alt="" />
+          <img class="about_r-lines" src="img/right_lines.svg" alt="" />
           <div class="about_item_container">
             <div class="about__content">
               <div class="about_content_container">
@@ -73,8 +78,8 @@
             </div>
           </div>
         </div>
-        <div class="about__item">
-          <img class="about__item-svg" src="img/left_long_svg.svg" alt="" />
+        <div class="about__item first_item">
+          <img class="about_l-lines" src="img/left_lines.svg" alt="" />
           <div class="about_item_container">
             <div class="about__image-wrap">
               <img class="about__image" src="img/about_img_2.png" alt="" />
@@ -123,6 +128,134 @@
           </div>
         </div>
       </section>
+      <section class="tram-section">
+        <div class="tram-container">
+          <img class="train_bg" src="img/tram.png" alt="" />
+          <div class="tram-details">
+            <div class="tram_details_container">
+              <h3 class="tram-title">
+                Для КП «Київпастранс» було поставлено 57 сучасних та
+                комфортабельних вагонів 71-414К Fokstrot, які курсують по
+                Борщагівській лінії швидкісного трамвая та на лівому березі
+                столиці.
+              </h3>
+              <p class="tram-description">
+                Трамваї оснащено кондиціонерами, пандусами, системою
+                відеоспостереження. Також встановлено GPS-трекери. Фоктрот
+                відрізняється сучасним дизайном кузова і використанням
+                композитних матеріалів. Трамвай був побудований з використанням
+                нового типу поворотних візків. Трамвай стійкий до важких умов
+                експлуатації, таких як низькі температури. Фоктрот відповідає
+                стандарту зіткнення стандарту EN 15227. Безпека пасажирів і
+                водія забезпечується зоною поглинання енергії зіткнення, яка
+                захищає від наслідків зіткнення, зменшуючи ударні
+                перевантаження. Зона поглинання також допомагає уникнути
+                пошкодження та деформації конструкції трамваю під час зіткнення.
+              </p>
+            </div>
+          </div>
+          <div class="tram-image-container">
+            <img class="tram-image-secondary" src="img/train2.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="about__gallery">
+        <img class="about_r_lines" src="img/about_r_lines.svg" alt="" />
+        <div class="about__gallery-container">
+          <div class="about__info">
+            <h2 class="about__gallery-title">
+              Запрошуємо вас ознайомитися з каталогом продукції та послуг PESA
+              Bydgoszcz SA на офіційному сайті
+            </h2>
+            <a href="#" class="about_gallery-link">Офіційний сайт</a>
+          </div>
+          <div class="gallery_container">
+            <ul class="glide__slides test">
+              <img
+                src="img/image.png"
+                alt="Train 1"
+                width="346"
+                height="240"
+                class="about__gallery-img"
+              />
+              <img
+                src="img/image-2.png"
+                alt="Train 1"
+                width="212"
+                height="240"
+                class="about__gallery-img"
+              />
+              <img
+                src="img/image-1.png"
+                alt="Train 1"
+                width="446"
+                height="240"
+                class="about__gallery-img"
+              />
+              <img
+                src="img/ttt.png"
+                alt="Train 1"
+                width="475"
+                height="240"
+                class="about__gallery-img"
+              />
+              <img
+                src="img/train-5.png"
+                alt="Train 1"
+                width="475"
+                height="240"
+                class="about__gallery-img"
+              />
+              <img
+                src="img/train-6.png"
+                alt="Train 1"
+                width="475"
+                height="240"
+                class="about__gallery-img"
+              />
+            </ul>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <img
+          src="./img/logo_accent.svg"
+          alt="footer-logo"
+          class="footer-logo"
+        />
+        <ul class="footer-contacts">
+          <li class="footer-contact">
+            <img
+              src="./img/Communication/phone.svg"
+              alt="phone-icon"
+              class="footer-contact-icon"
+            />
+            <p class="footer-contact-text">+380 (97) 908-75-71</p>
+          </li>
+          <li class="footer-contact">
+            <img
+              src="./img/email.svg"
+              alt="email-icon"
+              class="footer-contact-icon"
+            />
+            <p class="footer-contact-text">info@pesa-ukrservice.com.ua</p>
+          </li>
+        </ul>
+      </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script>
+      const slider = tns({
+        container: ".test",
+        autoWidth: true,
+        gutter: 10,
+        autoHeight: true,
+        rewind: true,
+        items: 5,
+        mouseDrag: true,
+        swipeAngle: false,
+        center: false,
+      });
+    </script>
   </body>
 </html>
