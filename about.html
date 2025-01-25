@@ -9,9 +9,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
@@ -170,49 +179,79 @@
             <a href="#" class="about_gallery-link">Офіційний сайт</a>
           </div>
           <div class="gallery_container">
-            <ul class="glide__slides test">
-              <img
-                src="img/image.png"
-                alt="Train 1"
-                width="346"
-                height="240"
-                class="about__gallery-img"
-              />
-              <img
-                src="img/image-2.png"
-                alt="Train 1"
-                width="212"
-                height="240"
-                class="about__gallery-img"
-              />
-              <img
-                src="img/image-1.png"
-                alt="Train 1"
-                width="446"
-                height="240"
-                class="about__gallery-img"
-              />
-              <img
-                src="img/ttt.png"
-                alt="Train 1"
-                width="475"
-                height="240"
-                class="about__gallery-img"
-              />
-              <img
-                src="img/train-5.png"
-                alt="Train 1"
-                width="475"
-                height="240"
-                class="about__gallery-img"
-              />
-              <img
-                src="img/train-6.png"
-                alt="Train 1"
-                width="475"
-                height="240"
-                class="about__gallery-img"
-              />
+            <!--            <div class="owl-carousel owl-theme">-->
+            <!--              <div class="item">-->
+            <!--                <img-->
+            <!--                  src="img/image.png"-->
+            <!--                  alt="Train 1"-->
+            <!--                  class="about__gallery-img"-->
+            <!--                />-->
+            <!--              </div>-->
+            <!--              <div class="item">-->
+            <!--                <img-->
+            <!--                  src="img/image.png"-->
+            <!--                  alt="Train 1"-->
+            <!--                  width="346"-->
+            <!--                  height="240"-->
+            <!--                  class="about__gallery-img"-->
+            <!--                />-->
+            <!--              </div>-->
+            <!--              <div class="item" style="width: 500px"><h4>3</h4></div>-->
+            <!--              <div class="item" style="width: 100px"><h4>4</h4></div>-->
+            <!--              <div class="item" style="width: 50px"><h4>6</h4></div>-->
+            <!--              <div class="item" style="width: 250px"><h4>7</h4></div>-->
+            <!--              <div class="item" style="width: 120px"><h4>8</h4></div>-->
+            <!--              <div class="item" style="width: 420px"><h4>9</h4></div>-->
+            <!--              <div class="item" style="width: 120px"><h4>10</h4></div>-->
+            <!--              <div class="item" style="width: 300px"><h4>11</h4></div>-->
+            <!--              <div class="item" style="width: 450px"><h4>12</h4></div>-->
+            <!--              <div class="item" style="width: 220px"><h4>13</h4></div>-->
+            <!--              <div class="item" style="width: 150px"><h4>14</h4></div>-->
+            <!--              <div class="item" style="width: 600px"><h4>15</h4></div>-->
+            <!--            </div>-->
+            <ul class="gallery owl-carousel owl-theme">
+              <div class="item" style="width: 500px">
+                <img
+                  src="img/image.png"
+                  alt="Train 1"
+                  class="about__gallery-img"
+                />
+              </div>
+              <div class="item" style="width: 250px">
+                <img
+                  src="img/image-2.png"
+                  alt="Train 1"
+                  class="about__gallery-img"
+                />
+              </div>
+              <div class="item" style="width: 446px">
+                <img
+                  src="img/image-1.png"
+                  alt="Train 1"
+                  class="about__gallery-img"
+                />
+              </div>
+              <div class="item" style="width: 475px">
+                <img
+                  src="img/image-3.png"
+                  alt="Train 1"
+                  class="about__gallery-img"
+                />
+              </div>
+              <div class="item" style="width: 250px">
+                <img
+                  src="img/image-2.png"
+                  alt="Train 1"
+                  class="about__gallery-img"
+                />
+              </div>
+              <div class="item" style="width: 436px">
+                <img
+                  src="img/train-5.png"
+                  alt="Train 1"
+                  class="about__gallery-img"
+                />
+              </div>
             </ul>
           </div>
         </div>
@@ -243,18 +282,42 @@
         </ul>
       </footer>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script>
-      const slider = tns({
-        container: ".test",
+      $(".owl-carousel").owlCarousel({
+        margin: 10,
+        loop: true,
+        startPosition: 0,
         autoWidth: true,
-        gutter: 10,
-        autoHeight: true,
-        rewind: true,
         items: 5,
-        mouseDrag: true,
-        swipeAngle: false,
-        center: false,
+        dots: false,
+        responsive: {
+          300: {
+            items: 1,
+            margin: 0,
+            autoWidth: false,
+          },
+
+          600: {
+            items: 3,
+            margin: 0,
+            autoWidth: false,
+          },
+          1200: {
+            autoWidth: true,
+            items: 5,
+          },
+        },
       });
     </script>
   </body>
